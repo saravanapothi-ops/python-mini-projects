@@ -21,3 +21,12 @@ class BankAccount:
         else:
             self.balance -= amount
             print(f"Withdrawn {amount}. Remaining balance: {self.balance}")
+
+
+
+if __name__ == "__main__":
+    account = BankAccount("Saravanapothi", 1000)
+
+    account.deposit(500)
+    account.withdraw(300)
+    account.withdraw(2000)
